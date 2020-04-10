@@ -36,17 +36,17 @@ html{
 
   /* add css for nav*/
  .head{
-    margin: 2%; 
+    margin: 6% 0 0 0; 
     
 }
 nav{
     margin: 0 auto;
-    width: 60%;
+    max-width: 50%;
     display: flex;
     justify-content: center;
 }
 .Logo{
-width: auto;
+    text-align: center;
 }
 
 .Navlinks
@@ -57,6 +57,7 @@ width: auto;
     justify-content: space-around;
 }
 .Navlinks li{
+    padding: 0 6%;
     margin: 3rem 0 0 0;
     
     }
@@ -91,6 +92,9 @@ table {
 
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    max-width:100%;
 }
 
 html, body {
@@ -115,82 +119,131 @@ p {
 #top-contentcontainer {
     margin: 30%;
 }
-
-/*add 2 sections to make the rows*/
-.topboxes div{
-    
+.bigtext{
     display: flex;
-    justify-content: center;
+}
+/*add 2 sections to make the rows*/
+.topboxes {
+    width: 100%;
+    height: 300 px;
+    border: 5px solid green;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    margin: 10%
+    margin: 4%;
 }
 
-.topboxes2 div{
+.topboxes2 {
+    width: 100%;
+    height: 300 px;
+    border: 5px solid green;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    margin: 10%
+    margin: 4%;
 }
 /*Add boxes and colors*/
 .box1  {
     width: 10rem;
     height: 10rem;
-    background-color: black;
+    background-color: #008080;
     color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+
 }
 .box2  {
     width: 10rem;
     height: 10rem;
-    background-color: black;
+    background-color: #FFD700;
     color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .box3  {
     width: 10rem;
     height: 10rem;
-    background-color: black;
+    background-color: #5F9EA0;
     color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .box4  {
     width: 10rem;
     height: 10rem;
-    background-color: black;
+    background-color: #FF7F50;
     color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .box5  {
     width: 10rem;
     height: 10rem;
-    background-color: black;
+    background-color: #DC143C;
     color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .box6  {
     width: 10rem;
     height: 10rem;
-    background-color: black;
+    background-color: #228B22;
     color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .box7  {
     width: 10rem;
     height: 10rem;
-    background-color: black;
+    background-color: #9932CC;
     color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .box8  {
     width: 10rem;
     height: 10rem;
-    background-color: black;
+    background-color: #FF69B4;
     color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .box9 {
     width: 10rem;
     height: 10rem;
-    background-color: black;
+    background-color: #4B0082;
     color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .box10 {
     width: 10rem;
     height: 10rem;
-    background-color: black;
+    background-color: #1E90FF;
     color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
@@ -251,83 +304,121 @@ p {
 }
 
 footer {
+    
     width: 100%;
     background: black;
 }
 
 footer nav {
-    width: 60%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+    margin: 0 4%;
+    border: 5px solid green;
+    width: 95%;
     padding: 20px 2%;
     font-size: 14px;
 }
 
 footer nav a {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    width: 100%;
+    text-align: left;
+    margin: 1.5%;
     color: white;
     text-decoration: none;
 }
+/
+@media (max-width: 800px){
+
+    nav{
+        text-align: center;
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    .logo {
+        width: 90%;
+    }
+
+    .heropic {
+        width: 80%;
+    }
+    .top-content{
+        border: #DC143C 6px solid;
+        display: flex;
+    } 
+    .text-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2% 20px;
+    justify-content: space-around;
+    }
+
+    footer nav {
+        margin: 0 20%;
+        justify-content: space-evenly;
+        align-content: center;
+        text-align: center;
+        border: 5px solid green;
+        width: 95%;
+        padding: 20px 2%;
+        font-size: 14px;
+    }
+    footer nav a {
+        
+        width: 100%;
+        text-align: center;
+        margin: 0 10%;
+        
+    }
+
+body {
+    background: #008080;
+}
+.topboxes {
+    
+}
+
+.topboxes2 {
+    
+}
+
+    
+    }
 
 @media (max-width: 500px){
-
-
-.box1  {
-    width: 10rem;
-    height: 10rem;
-    background-color: #008080;
-    color: white;
-}
-.box2  {
+    .logo{
+        width: 0 auto;
+        text-align: center;
+    }
+    .head{
+        width: 100%;
     
-    background-color: #FFD700;
-    
-}
-.box3  {
-    
-    background-color: #5F9EA0;
-   
-}
-.box4  {
-    
-    background-color: #FF7F50;
-    
-}
-.box5  {
-   
-    background-color: #DC143C;
-   
-}
-.box6  {
-    
-    background-color: #228B22;
-   
-}
-.box7  {
-    
-    background-color: #9932CC;
-
-}
-.box8  {
-  
-    background-color: #FF69B4;
-  
-}
-.box9 {
-   
+    }
+.Navlinks{
+    flex-direction: column;
+    text-align: center;
     background-color: #4B0082;
+}
+.Navbutton {
+    justify-content: baseline;
+    text-align: center;
+    width: 150%;
+    height: 40px;
+    background-color: silver;
     
 }
-.box10 {
-    
-    background-color: #1E90FF;
-   
-}
-.topboxes div{
+
+
+.topboxes .box1 .box2 .box3 .box4 .box5{
+    width: 140%;
+    margin: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10%
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .topboxes2 div{
@@ -338,9 +429,10 @@ footer nav a {
 }
 .top-content {
     flex-direction: column;
-
+    align-items: center;
 }
  *{
-     width: 500px;
+     max-width: 500px;
  }
+
 }
