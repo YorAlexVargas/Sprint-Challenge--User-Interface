@@ -126,7 +126,7 @@ p {
 .topboxes {
     width: 100%;
     height: 300 px;
-    border: 5px solid green;
+   
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -136,7 +136,7 @@ p {
 .topboxes2 {
     width: 100%;
     height: 300 px;
-    border: 5px solid green;
+  
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -400,11 +400,12 @@ body {
     }
 .Navlinks{
     flex-direction: column;
-    text-align: center;
-    background-color: #4B0082;
+    justify-content: flex-start;
+    margin: 0 5% 0 0;
+
 }
 .Navbutton {
-    justify-content: baseline;
+    justify-content: center;
     text-align: center;
     width: 150%;
     height: 40px;
@@ -413,12 +414,18 @@ body {
 }
 
 
-.topboxes .box1 .box2 .box3 .box4 .box5{
-    width: 140%;
-    margin: 100%;
-    display: flex;
+.topboxes {
+    justify-content: center;
+    align-content: space-around;
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+
+
+.box5
+{
+    display:none;
 }
 
 .topboxes2 div{
@@ -434,5 +441,11 @@ body {
  *{
      max-width: 500px;
  }
+ .bottom-content {
+     display: none;
+ }
 
+footer {
+    display: none;
+}
 }
